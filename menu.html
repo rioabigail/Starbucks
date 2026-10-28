@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f4ee">
+  <title>Menu — Starbucks</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Starbucks home"><span class="brand-mark">S</span><span>STARBUCKS</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="menu.html">Menu</a><a href="about.html">Our story</a><a href="contact.html">Contact</a><a class="bag-link" href="menu.html">Your bag <span class="bag-count" aria-live="polite">0</span></a></nav>
+  </header>
+  <main>
+    <section class="page-intro menu-intro"><p class="eyebrow">MADE FOR YOUR KIND OF DAY</p><h1>Find your<br><em>happy place.</em></h1><p>Something cool, something cozy, and something sweet to go with it.</p></section>
+    <section class="menu-section section-wrap">
+      <div class="menu-toolbar">
+        <div class="filter-group" role="group" aria-label="Filter menu"><button class="filter-button active" type="button" data-filter="all" aria-pressed="true">Everything</button><button class="filter-button" type="button" data-filter="drinks" aria-pressed="false">Drinks</button><button class="filter-button" type="button" data-filter="treats" aria-pressed="false">Treats</button></div>
+        <label class="search-field"><span class="visually-hidden">Search the menu</span><input id="menu-search" type="search" placeholder="Find a favorite…" autocomplete="off"><span aria-hidden="true">⌕</span></label>
+      </div>
+      <p class="menu-result" id="menu-result" aria-live="polite">Showing all favorites</p>
+      <div class="menu-grid">
+        <article class="menu-card" data-category="drinks" data-name="peppermint mocha"><div class="menu-photo"><img src="PeppermintMocha.jpg" alt="Peppermint mocha with whipped cream"><span class="product-tag">SEASONAL</span></div><div class="menu-card-copy"><div><p class="product-type">HOT COFFEE</p><h2>Peppermint mocha</h2></div><span class="price">$5.75</span></div><p class="product-description">Espresso, chocolate, cool peppermint and a cloud of whipped cream.</p><button class="add-button" type="button" data-product="Peppermint mocha">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="menu-card" data-category="drinks" data-name="chocolate mocha"><div class="menu-photo"><img src="ChocolateMocha.jpg" alt="Chocolate mocha"><span class="product-tag">COZY PICK</span></div><div class="menu-card-copy"><div><p class="product-type">HOT COFFEE</p><h2>Chocolate mocha</h2></div><span class="price">$5.45</span></div><p class="product-description">A smooth espresso and chocolate pairing for the sweetest kind of break.</p><button class="add-button" type="button" data-product="Chocolate mocha">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="menu-card" data-category="drinks" data-name="frappuccino"><div class="menu-photo"><img src="Frappuccino.jpg" alt="Iced blended Frappuccino"><span class="product-tag">COOL & CREAMY</span></div><div class="menu-card-copy"><div><p class="product-type">BLENDED BEVERAGE</p><h2>Frappuccino®</h2></div><span class="price">$5.95</span></div><p class="product-description">A deliciously icy blend made for slow sips and sunny afternoons.</p><button class="add-button" type="button" data-product="Frappuccino">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="menu-card" data-category="treats" data-name="chocolate cookie"><div class="menu-photo"><img src="Cookie.jpg" alt="Fresh chocolate cookie"><span class="product-tag">BAKERY</span></div><div class="menu-card-copy"><div><p class="product-type">BAKED FRESH</p><h2>Chocolate cookie</h2></div><span class="price">$3.25</span></div><p class="product-description">A soft-baked, chocolatey little something for your coffee break.</p><button class="add-button" type="button" data-product="Chocolate cookie">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="menu-card" data-category="treats" data-name="butter croissant"><div class="menu-photo"><img src="CookieCroisant.jpg" alt="Golden flaky butter croissant"><span class="product-tag">BAKERY</span></div><div class="menu-card-copy"><div><p class="product-type">BAKED FRESH</p><h2>Butter croissant</h2></div><span class="price">$3.75</span></div><p class="product-description">Flaky, golden layers that make the morning feel a little softer.</p><button class="add-button" type="button" data-product="Butter croissant">Add to bag <span aria-hidden="true">+</span></button></article>
+      </div>
+      <p class="no-results" id="no-results" hidden>No favorites found. Try another search or category.</p>
+      <p class="toast" id="cart-toast" role="status" aria-live="polite"></p>
+    </section>
+    <section class="menu-note"><span aria-hidden="true">✳</span><p>Your favorite, your way.<br><strong>Good things are always on the menu.</strong></p><a class="text-link" href="contact.html">Have a question? <span aria-hidden="true">→</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">S</span><span>STARBUCKS</span></a><span>Good things are brewing.</span><div class="footer-links"><a href="about.html">Our story</a><a href="contact.html">Say hello</a></div><small>© 2025 Starbucks Coffee Company</small></footer>
+</body>
+</html>
